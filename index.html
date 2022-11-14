@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Felix's Phase 4 Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+    <div class="wrapper">
+        <header>
+        <h1>Phase 4: Ruby on Rails - Project Task Management App</h1>
+        </header>
+
+        <div id="content">
+        <h3>Ruby on Rails</h3>
+
+          <p>
+            Finally made it to the final learning Phase of Academy Xi’s Software Engineering course… RAILS. 
+          </p>
+
+          <p>
+            This project was the most time consuming and hardest to learn, and it didn’t help that I was already behind with my Rails module. 
+            Upon finishing the module leading up to the project, I realised how much more there is to rails. 
+            This project really made me get out of my comfort zone once again and explore the vast internet for answers to every part of my rails project like a true software engineer.
+          </p>
+        
+        <quote>
+        <h2>"There is still so much more to rails that I need to learn and understand"</h2>
+        </quote>
+
+        <h3>The Planning…</h3>
+
+          <p>
+            Step one of the Rails project was indeed a very hard step… deciding and planning. 
+            I was so lost in what I want to build for my Rails app, but everyone else in the class had the same issue which was reassuring. 
+            After numerous ideas, including complexed ones, 
+            I chose to go with an example app that was recommended in the Project instructions… a task management app.
+          </p>
+
+          <p>
+            Before jumping into planning, I rewatched previous classes where we built a to-do list. 
+            I figure it would be similar concept, but I later discovered how very wrong I was…
+          </p>
+
+          <p>
+            First, I planned that my models for the app will be ‘Users’, ‘Project’ and ‘Task’, 
+            long with all the model attributes and relationships. A Task management app should allow ‘Users’ to create a ‘Project’, 
+            and create specific ‘Tasks’ for the project and be able to determine the status of the tasks, 
+            whether it is in progress or completed. However, a project should be User specific, 
+            allowing the User to make changes and their own projects. 
+            With the help of generating a scaffold, 
+            I had the perfect outline on what I needed to begin the project!
+          </p>
+
+        <h3>Tackling the project…</h3>
+        
+        <p>
+          With time running out, I jumped into the project and began building the app from scratch. 
+          With the Rails Guide open on one screen, I began programming and creating my models, views, controller and data migration, and BOOM!...
+          I was immediately stuck… User authentication…
+        </p>
+      
+      <quote>
+      <h2>Why isn’t my authentication for a User working…”</h2>
+      </quote>
+
+      <p>
+        We had experiences with creating a user before, but authenticating a user with a login and sign up… I was so lost! 
+        I had gone through our new Rails module with Authenticating a User and the lab was a piece of cake. 
+        I had implemented this in my app with a session and all, but to no avail, it didn’t work, and I was so confused why it didn’t work. 
+        After numerous hours of getting help from my good friend Google and breaking my programming with possible solution codes, I was defeated. 
+      </p>
+
+      <p>
+        I checked the project requirements, knowing I had already failed to provide an authentication for a user. 
+        Fortunately, in failure came the answer… ‘Devise’. A word I seen everywhere when searching for authenticating a user. 
+        Time to learn something new!
+      </p>
+
+      <p>
+        I started my Project from scratch again and implemented ‘Devise’. 
+        Using Devise was simple, install the gem and it comes with instructions, 
+        along with help from Devise cheat sheet provided by the developer. 
+        Applied the instructions and I had a working user authentication! 
+        Next came writing the controller and preparing my views, and implemented links to make use of nested resources. 
+        Finally booted my app to index page with ‘root to: projects#index’ with authentication of a user before the page loads. 
+        After days of being lost in code and stressed from confusion, my app worked!
+      </p>
+
+      <quote>
+        <h2>"Testing… testing… testing…”</h2>
+      </quote>
+
+      <p>
+        As happy as I was, I celebrated too soon… there were complications in running ‘devise’… Creating ‘rspec’ rails testing was the final step. 
+        However, testing with devise is different from what I had encountered in labs, 
+        because it required authentication before any further actions can be performed. 
+        Off I went again… back to my good friend Google. 
+        Thank God for StackForums and hello to FactoryBot and Devise test gem.
+      </p>
+
+      
+      <h3>Summary</h3>
+
+      <p>
+        Every project so far has gotten me out of my comfort zone and surf Google for answers. 
+        There is so much more to learn that is outside of what a module can teach you in four weeks. 
+        Good to know that the learning doesn’t stop here.
+      </p>  
+        <section id="author">
+          <img src="images/Felix.jpg" alt="Felix Hoang">
+          
+          <h4>Written by Felix.H</h4>
+
+          <h4>Connect</h4>
+           <a href="https://au.linkedin.com/in/felix-d-hoang">LinkedIn<br></a>
+           <a href="https://github.com/HFelixH">GitHub<br></a>
+
+        </section>
+
+        
+
+        </div>
+    </div>    
+  </body>
+</html>
