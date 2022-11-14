@@ -11,8 +11,8 @@ header {
 
   body {
     background-image:url(../images/NicePng_accounting-png_9335230.png); 
-    background-repeat: no-repeat;
-    background-size: auto
+    background-repeat: fixed;
+    background-size: cover;
     font-family: 'Lucida Sans', sans-serif;
     font-size: 125%;
   }
